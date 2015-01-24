@@ -1,0 +1,246 @@
+/* -------------------------
+File CSS cho admin
+
+Người viết: Thái Thanh Nhàn
+MSSV: 1111427
+Email: thanhnhan2tn@gmail.com
+
+----------------------------*/
+
+
+/* login_form */
+*{
+	font: 14px Arial;
+	}
+.login_form{
+	max-width: 400px;
+	height: 230px;
+	padding: 0px;
+	border: 1px solid #96F;
+	border-radius: 10px;
+	background: #fff;
+	overflow: hidden;
+	margin: 30px auto;
+	}
+.login_form form{
+	padding: 10px;`
+	}
+.login_form p{
+	background: #96F;
+	font-weight: bold !important;
+	display: block;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+	margin: 0px;
+	padding: 10px;`
+	}
+.login_form span{
+	padding: 5px 2px;
+	display:inline-block;
+	max-width:40%;
+	min-width: 150px;
+	float:left;
+	font-weight: bolder;
+	}
+.login_form input{
+	width: 50%;
+	float:bottom;
+	padding: 5px;
+	margin: 5px;
+	border: 1px inset;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius:5px;	
+	}
+	
+/* end login_form */
+/* CSS admin.php
+*/
+.header .title{
+	padding: 7px !important;
+}
+
+.left_col{
+	width:19.9%;
+	border-bottom: 1px solid #9CF;
+}
+.left_col a:link{
+	color: #fff !important;
+	text-decoration: none !important;
+}
+.left_col a:hover,
+.left_col a:focus,
+{
+	text-decoration: none !important;
+}
+.icon-head{
+	
+	background-position: 0px -116px;
+	margin: -2px 2px 0 0;
+	}
+.text_title{
+	position: absolute;
+	
+	font-size: 20px;
+}
+.user_title{
+	float: right !important;
+	color: #fff;
+	margin-right: 130px;
+	}
+.menuitem{
+	margin: auto 5px; 
+}
+.thongke,.themnhanh{
+	padding: 10px;
+}
+.right_col{
+	min-height: 500px !important	;
+}
+/* END Admin.php */
+/* CSS Danh muc .php*/
+
+*{	
+	padding: 0;
+	margin: 0;
+	font: 14px Arial;
+	}
+.list_danhmuc table{
+	border: 1px solid #ccc;
+	width: 95%;
+	margin: 10px;
+	border-spacing: 0px;	
+	
+}
+.list_danhmuc  thead{
+	text-align: center;
+	background: #99E7FF;
+	font-weight: bold !important;
+}
+.list_danhmuc  th{
+	border: 1px solid #7343D3;
+	min-width: 10px;
+	padding: 6px 10px;
+	background: #96F;
+	font-weight: bold !important;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+.list_danhmuc  td{
+	border: 1px solid #96F;
+	min-width: 10px;
+	padding: 6px;
+}
+
+.them_danhmuc{
+	
+	display: block;
+	margin: 10px;
+	width: 95%;
+	}
+.them_danhmuc h2{
+	
+	font-weight: bold !important;
+	display: block;
+	
+	margin: 0px;
+	
+	}
+.them_danhmuc form{
+	padding: 10px;
+}
+.them_danhmuc input{
+	padding: 5px;
+}
+/* END CSS Danh muc .php*/
+/* CSS kenh.php*/
+.list_kenh table{
+	border: 1px solid #ccc;
+	width: 95%;
+	margin: 10px 0;
+	border-spacing: 0px;	
+	
+}
+.list_kenh  thead{
+	text-align: center;
+	background: #99E7FF;
+	font-weight: bold !important;
+}
+.list_kenh  th{
+	border: 1px solid #7343D3;
+	min-width: 10px;
+	padding: 6px 10px;
+	background: #96F;
+	font-weight: bold !important;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+.list_kenh  td{
+	border: 1px solid #96F;
+	min-width: 10px;
+max-width: 300px;
+	padding: 6px;
+}
+.them_kenh{
+	
+	display: block;
+	margin: 10px;
+	width: 98%;
+	min-height:300px;
+	overflow:hidden;
+	}
+.them_kenh h2{
+	font-weight: bold !important;
+	display: block;
+	margin: 0px;
+	}
+.them_kenh form{
+	padding: 10px;
+}
+.them_kenh .kenh_label span{
+	display: block;
+	font-weight:bolder;
+	padding: 9px 0;
+	margin:5px;
+	border-bottom: dotted 1px gray;
+}
+.them_kenh input[type="textbox"],
+.them_kenh input[type="file"],
+.them_kenh select{
+	padding:5px;
+	margin:6px;
+	width: 90%;
+	display: inherit;
+	
+}
+.edit-chanel input[type="textbox"],
+.edit-chanel input[type="file"],
+.edit-chanel select{
+	padding:5px;
+	margin:6px;
+	width: 60%;
+	display: inline-block;
+	
+}
+/*End CSS kenh.php*/
+
+/*Gopy*/
+.gopy table th{
+	background-image: -webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+	background-image: linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+	background-repeat: repeat-x;
+	border: 1px solid #ccc;
+}
+.gopy table td{
+	border: 1px solid #ccc;
+}
+.hidden{
+	display: none;
+}
+.showmobile{
+	display: block;
+}
+
+/*End Gopy*/

@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* +----------------------------------+
+   | Author: tranglt, ducdt           |
+   | Class: 2c05                      |
+   +----------------------------------+
+   | Project: Web Services Glossary   |
+   | Subject code: AIW 428            |
+   +----------------------------------+
+   | File version: 1.0                |
+   | Last modified: Apr 26, 2009      |
+   +----------------------------------+ */
+
+
+/* begin LAYOUT style */
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #a5c7e0;
+}
+
+.top
+{
+	height: 127px;
+	width: 100%;
+	
+}
+
+.main
+{
+	height: auto;
+	width: 800px;
+	background: #FFFFFF;
+	background-repeat: repeat-y;
+	text-align: center;
+}
+
+.banner
+{
+	height: 127px;
+	width: 800px;
+	background: url(img/banner.jpg);
+	background-repeat: repeat-y;
+}
+
+.menu
+{
+	text-align: left;
+	padding-top: 100px;
+}
+
+.menu a:link, .menu a:visited
+{
+	padding: 3px 15px 3px 15px;
+	
+	margin-top: 4px;
+	display: inline-table;
+	background: #FF9900;
+	font: bold 15px Arial, Helvetica, sans-serif;
+	color: #003300;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+	background: #FF9933;
+	color: #FFF;
+}
+
+.bottom
+{
+	width: 100%;
+	
+}
+
+.copyright
+{
+	width: 800px;
+	background: #A4C6DF;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	color: #000000;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.content
+{
+	padding: 18px;
+	text-align: left;
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+}
+.text
+{
+	margin-left: 50px;
+}
+.font
+{
+	font: 20px Arial, Helvetica, sans-serif;
+	color: #0033FF;
+	
+}
+/* end LAYOUT style */
+.input_text
+{
+	width: 300px;
+	height: 22px;
+	font:14px Arial, Helvetica, sans-serif;
+	margin-top: 8px;
+	border-color: #999999;
+	border-width: 1px;
+}
+
+.search_button
+{
+	background: url(img/search_button.png);
+	background-repeat: no-repeat;
+	width: 85px;
+	height: 31px;
+	border: 0;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.search_pic
+{
+   width= 430px ;
+   height= 31px ;
+   padding: 0px 10px 10px 10px;
+}
+.search_box
+{
+
+	float: left;
+	padding-left: 80px;
+	padding-top: 10px;
+}
+.search_result
+{
+
+	clear:both;
+	padding-top: -10px;
+}
+/*end*/
+/* add new term page */
+.label_input
+{
+	text-align: right;
+	width: 100px;
+	font: bold 13px arial;
+	
+	
+}
+
+label
+{
+	text-align: right;
+	float: left;
+}
+
+input.nameinfo
+{
+	width: 300px;
+	border: 1px solid #878787;
+	font: normal 13px arial;
+	height: 25px;
+	
+}
+textarea.big
+{
+	width: 500px;
+	height: 200px;
+}
+.notice
+{
+		text-align: center;
+		font: 15px Arial, Helvetica, sans-serif;
+		color: #0033FF;
+		padding-top: 30px;
+}
+
+
+a.add_link
+{
+		font-style:italic;
+		font:12px Arial, Helvetica, sans-serif;
+		color: #009933;
+		padding-left: 5px;
+		padding-right: 5px
+}
+.add_link:hover
+{
+		font-style: normal;
+		font:13px Arial, Helvetica, sans-serif;
+		color:#0033FF;
+}
+/*end*/
+/*search*/
+.notice2
+{
+		text-align: center;
+		font: 14px Arial, Helvetica, sans-serif;
+		color: #0033FF;
+		padding-top: 0px;
+}
+
+/*end*/

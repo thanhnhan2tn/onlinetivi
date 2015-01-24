@@ -1,0 +1,61 @@
+<?php
+	include_once '../../include/function.php';
+	include_once '../../include/config.php';
+	$conn =  mysql_connect($hostname, $dbUser ,$dbPass) or die(mysql_error());
+	mysql_set_charset('utf8',$conn);
+	mysql_select_db('$dbName', $conn);
+	$sqls='SELECT kenh_name FROM nhapmon.kenh';
+	$querys= mysql_query($sqls);
+	
+	$aUsers = mysql_fetch_array($querys);
+echo $aUsers[1];
+
+?>
+
+
+<head>
+<script type="text/javascript" src="js/bsn.AutoSuggest_c_2.0.js"></script>
+
+<link rel="stylesheet" href="css/autosuggest_inquisitor.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+<body>
+
+<h2>Example (JSON)</h2>
+
+<div>
+<form method="get" action="">
+	<small style="float:right">Hidden ID Field: <input type="text" id="testid" value="" style="font-size: 10px; width: 20px;" disabled="disabled" /></small>
+	<label for="testinput">Person</label>
+	<input style="width: 200px" type="text" id="testinput" value="" /> 
+	<input type="submit" value="submit" />
+</form>
+</div>
+
+<div>
+<form method="get" action="">
+	<label for="testinput_xml">Person</label>
+	<input type="text" id="testinput_xml" value="" style="width:300px" /> 
+	<br /><br /><input type="submit" value="submit" />
+</form>
+
+</div>
+
+
+<script type="text/javascript">
+	var options = {
+		script:"test.php?json=true&",
+		varname:"input",
+		json:true,
+		callback: function (obj) { document.getElementById('testid').value = obj.id; }
+	};
+	var as_json = new AutoSuggest('testinput', options);
+	
+	
+	var options_xml = {
+		script:"test.php?",
+		varname:"input"
+	};
+	var as_xml = new AutoSuggest('testinput_xml', options_xml);
+</script>
+
+</body>

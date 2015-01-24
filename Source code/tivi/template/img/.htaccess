@@ -1,0 +1,12 @@
+# secure uploads directory
+<Files ~ ".*\..*">
+    Order Allow,Deny
+    Deny from all
+</Files>
+<FilesMatch "\.(asp|php|php5|pl)$">
+Deny from all
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|jpe|gif|png)$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>

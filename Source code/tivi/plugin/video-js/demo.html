@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video.js | HTML5 Video Player</title>
+
+  
+  
+
+  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+  <script>
+    videojs.options.flash.swf = "video-js.swf";
+  </script>
+
+
+</head>
+<body>
+
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+	 <link href="video-js.css" rel="stylesheet" type="text/css">
+	 <script src="video.js"></script>
+	if (preg_match("#^(.*?).mp4(.*?)#s", $link)){
+    <source src="http://video-js.zencoder.com/oceans-clip" type='video/mp4' />
+	}elseif (preg_match("#^(.*?).webm(.*?)#s", $link)){
+    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+	{elseif (preg_match("#^(.*?).ogv(.*?)#s", $link)){
+    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+	}
+    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+  </video>
+
+</body>
+</html>

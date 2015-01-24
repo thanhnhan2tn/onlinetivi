@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^index.html$ index.php
+RewriteRule ^([^_]*)_([^_]*)_([^_]*)\.html$ ./index.php?cat=$1&id=$2&chn=$3 [L]
+RewriteRule ^([^_]*)_([^_]*)\.html$ ./index.php?cat=$1&n=$2 [L]
+RewriteRule ^gopy([^/]*)\.html$ ./index.php?gopy [L]
+
+
